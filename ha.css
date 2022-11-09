@@ -1,0 +1,535 @@
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/notosanstc/v26/-nFkOG829Oofr2wohFbTp9i9uwYvDrVO3cuHnQmVtV4N3QDXzPiowFVyhy21F93pzxLWunL8lQ.119.woff2) format('woff2');
+    unicode-range: U+20-22, U+27-2a, U+2c-3b, U+3f, U+41-5d, U+61-7b, U+7d, U+a0, U+ab, U+ae, U+b2-b3, U+b7, U+bb, U+bf, U+c9, U+cd, U+d6, U+e0-ef, U+f1-f4, U+f6, U+f9-fa, U+fc-fd, U+101, U+103, U+110-111, U+113, U+12b, U+14d, U+16b, U+1a1, U+1b0, U+1ce, U+300-301, U+1ea1, U+1ea3, U+1ebf, U+1ec7, U+2013-2014, U+2039-203a, U+203c, U+2122, U+3001-3002, U+4e00, U+4e0a-4e0b, U+4e0d, U+4e2d, U+4eba, U+4ee5, U+4f5c, U+4f86, U+500b, U+5011, U+5165, U+5168, U+516c, U+51fa, U+5206, U+5230, U+52d5, U+53ef-53f0, U+570b, U+5728, U+5730, U+591a, U+5927, U+5929, U+597d, U+5b50, U+5bb6, U+5c0f, U+5e73-5e74, U+5fc3, U+6210-6211, U+6240, U+6587, U+65b0, U+65b9, U+65bc, U+65e5, U+660e, U+662f, U+6642, U+66f4, U+6700, U+6703, U+6708-6709, U+672c, U+6b63, U+6cbb, U+70b9-70ba, U+751f, U+7528, U+767c, U+7684, U+76f8, U+7db2, U+7f8e, U+80fd, U+81ea, U+884c, U+8981, U+958b, U+95dc, U+96fb, U+9801, U+9996, U+ff0c, U+ff1a;
+  }
+html{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+body{      
+    margin: 0;
+   max-width: 100%;
+
+   
+}
+
+
+
+
+/*back top*/
+.back-top {
+    z-index: 99999;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: Alpha(opacity=50);
+    width: 51px;
+    height: 35px;
+    background:  center no-repeat
+      url(file:///C:/Users/User/Desktop/%E5%93%88%E6%A0%B9/img/top.png);
+    background-size: 40px 25px;
+    border-radius: 12px;
+    /*border: 1px rgba(255, 255, 255, 0.6) solid;*/
+    transform: translateY(0%);
+    transition: all 0.2s linear;
+  }
+  
+  .back-top:hover {
+    opacity: 0.8;
+  }
+  
+  .back-top.hide {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    transform: translateY(150%);
+  }
+
+/*header*/
+
+.Rectangle1{
+width: 100%;
+height: 25px;
+left: 0px;
+top: 0px;
+background: #571A37;
+}
+
+.Rectangle2{
+    width:100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: #881B4F;
+    display: flex;
+}
+
+.navbar{
+ margin: 0;
+ padding: 0;
+width: 100%;
+
+}
+
+.Seaarch{
+width: 26px;
+height: 26px;
+left: 1265px;
+top: 79px;
+margin-left: 153px;
+margin-top: 15px;
+}
+
+.HDicon{
+    z-index: 1;
+    position:absolute;
+    
+width: 229px;
+height: 109px;
+left: 96px;
+top: 13px;
+
+}
+
+
+.navlist{
+
+margin-left: 450px;
+list-style: none;
+
+}
+
+.naav{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+.nav{
+  align-self: center;
+  margin-right: 53px; 
+  font-weight: 200;
+  font-size: 20px;
+  line-height:60px;
+  color: #FFFFFF;
+  text-decoration: none;
+  
+}
+
+.nav{
+    position:relative;
+  }
+
+  .nav::after{
+    content:" ";
+    position: absolute;
+    right:50%;
+    left:50%;
+    bottom:-5px;
+    border-bottom:2px solid  #FCF4EF;
+    transition: .3s;
+  }
+  .nav:hover::after{
+    right:0%;
+    left:0%;
+  }
+*/
+
+/*下拉選單*/ 
+
+
+.nav2{
+    align-self: center;
+    margin-right: 53px; 
+    font-weight: 200;
+    font-size: 20px;
+    line-height:60px;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+  }
+  
+  .nav2{
+      position:relative;
+    }
+
+
+.top-2{
+    position: relative;
+    display: inline-block;
+}
+
+.下拉選單{
+
+    background-color: #FCF4EF;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: none;
+
+
+}
+
+
+
+.下拉東{
+    text-decoration: none;
+    margin-right:91px ;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 85px;
+    color: #571A37;
+    
+
+    
+}
+
+.nav-list-item
+{
+    height: 100%;
+}
+
+
+
+.nav-list-item:hover .下拉選單{
+    display: flex;
+}
+
+
+/*文案*/
+
+/*第一部分*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  flex-direction: column; 
+  margin-top: 101px;
+
+}
+
+.taiwan-home-page-banner{
+
+width: 584px;
+height: 631px;
+border-radius: 39px;
+
+}
+
+
+.P1box{
+
+width: 1232px;
+height: 631px;
+background: #FCF4EF;
+border-radius: 39px;
+display: flex;
+margin: auto;
+
+}
+
+.title1{
+font-weight: 900;
+font-size: 48px;
+line-height: 58px;
+display: flex;
+justify-content:center;
+
+letter-spacing: 0.195em;
+color: #571A37;
+margin: 0%;
+margin-bottom: 81px;
+
+}
+
+.part1-content{
+    display: flex;    
+    flex-direction: column;
+justify-content: end;
+margin-bottom: 70px;
+margin-left: 101px;
+
+}
+
+.more{
+margin-top:129px; 
+margin-left: 299px;
+font-size: 24px;
+line-height: 58px;
+text-align: center;
+color: #FFFFFF;
+letter-spacing: 0.2em;
+background: #571A37;
+width: 177px;
+height: 60px;
+border-radius: 10px;
+text-decoration: none;
+transition: all .1s linear;
+font-weight: 400;
+
+}
+
+.more:hover{
+    background-color:#881B4F;
+}
+
+.title2{
+margin-top:182px;
+font-weight: 900;
+font-size: 32px;
+line-height: 39px;
+color: #571A37;
+
+}
+
+p{
+    
+font-weight: 200;
+font-size: 20px;
+line-height: 150.52%;
+letter-spacing: 0.03em;
+color: #AAAAAA;
+margin: 0;
+margin-top: 45px;
+
+}
+
+
+/*第二部分*/
+.part2{
+    margin-top: 99px;
+    display: flex;    
+    justify-content: center;
+}
+
+.icecream{
+width: 300px;
+height: 300px;
+margin-bottom: 49px;
+}
+
+.part2-flavor{
+font-weight: 600;
+font-size: 28px;
+line-height: 39px;
+color: #6F6F6F;
+}
+
+.part2-123{
+    margin-right: 70px;
+    width: 368px;
+    text-align: center;
+}
+
+.part2-3{
+    width: 368px;
+    text-align: center;
+}
+   
+.P2-title{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    justify-content:center;
+   
+    letter-spacing: 0.195em;
+    color: #571A37;
+
+    margin: 0%;
+    margin-top: 182px;
+  
+}
+
+.more2{
+font-weight: 400;
+font-size: 24px;
+line-height: 150px;
+text-align: center;
+color: #FFFFFF;
+letter-spacing: 0.2em;
+
+background: #571A37;
+padding:15px 33px;
+border-radius: 10px;
+text-decoration: none;
+transition: all .1s linear;
+}
+
+
+
+.more2:hover{
+    background-color:#881B4F;
+}
+
+/*333*/
+
+.P3box{
+
+    width: 1178px;
+    height: 548px;   
+    background: #571A37;
+    border-radius: 38px;
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    
+}
+
+.SC-and-Mac-Nut-Brittle{
+width: 548px;
+height: 548px;
+border-radius: 39px;
+
+}
+
+.P3content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 490px;
+
+}
+
+.P3-h2{
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;   
+letter-spacing: 0.02em;    
+color: #571A37;
+
+width: 490px;
+height: 75px;
+background: #FCF4EF;
+border-radius: 10px;
+text-align: center;
+line-height:75px;
+margin: 0;
+text-decoration:none;
+
+transition: all .2s linear;
+
+}
+
+.P3-h2:hover{
+    background-color:#881B4F;
+    color:#FCF4EF;
+}
+
+.P3-p{
+margin: 0;
+margin-top: 42px;
+font-weight: 200;
+font-size: 20px;
+line-height: 135%;
+text-align: center;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+.Chocolate_homepage_sitecore2{
+    width: 450px;
+    height: 450px;
+    align-items: center;
+    margin: 49px 0 49px 80px;
+}
+
+/*footer*/
+
+.footer-1{
+margin: 0;
+margin-top: 180px;
+height: 183px;
+background: #881B4F;
+}
+
+.footer1-content{
+padding-top: 65px;
+padding-left: 83px;
+
+}
+
+
+.C2022{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;   
+    letter-spacing: 0.195em;
+    color: #FCF4EF;
+    font-weight: 400;
+}
+
+
+.footer-text{
+font-weight: 600;
+font-size: 18px;
+line-height: 0px;
+letter-spacing: 0.195em;
+text-decoration-line: underline;
+color: #FCF4EF;
+margin-right: 34px;
+font-weight: 400;
+
+
+}
+
+
+.footerlist{
+    margin: 0%;
+    margin-top: 28PX;
+
+}
+
+.footer-2{
+height: 147px;
+background: #571A37;
+display: flex;
+flex-direction: row-reverse;
+
+
+
+}
+
+
+
+.ig-fb{
+margin-top: 36px;
+margin-right: 104px;
+
+}
+
+.instagram{
+    width: 45px;
+    height: 45px;
+    transition: all .2s linear;
+}
+
+.facebook{
+    width: 45px;
+    height: 45px;
+    margin-right: 31px;
+    transition: all .2s linear;
+}
+
+.instagram:hover{
+    transform: scale(0.95);
+}
+
+.facebook:hover{
+    transform: scale(0.95);
+}
